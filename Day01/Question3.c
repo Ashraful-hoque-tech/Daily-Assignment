@@ -1,0 +1,21 @@
+//write a program to find factorial of a number.
+#include <stdio.h>
+
+int main() {
+    int n;
+    long factorial = 1;  // use long long to find the factorial a very large number 
+
+    
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    
+    for(int i = 1; i <= n; i++) {
+        factorial = factorial * i;
+    }
+
+    
+    printf("Factorial of %d = %lld\n", n, factorial);
+
+    return 0;
+}
